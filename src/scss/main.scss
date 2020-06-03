@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'montseratt', sans-serif;
+  }
+  
+  /* Component Form */
+  .calender {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #root {
+    padding: 25px;
+    background-image: url(../image/cloud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main {
+    height: 100vh;
+  }
+  
+  .search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formBtn {
+    width: 8em;
+    height: 3.5em;
+    background: linear-gradient(to bottom,  #11e8bb 0%,#8200c9 100%); 
+    color: white;
+    border-radius: 20px; 
+    margin-left: 20px; 
+    font-weight: bold; 
+    outline: 0;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formH1{
+    color:white; 
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .search-box .search-bar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0px 5px rgba(0, 0 , 0, 0.2);
+    color: #313131;
+    margin-top: 20px;
+  }
+  
+  /* Component Result */
+  .resultDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    height: 80%em;
+    width: 100%;
+  }
+  
+  .resultIcon, .resultCity, .resultIcon2 {
+    background: rgba(30, 67, 102, 0.5);
+    margin: 2em;
+    border-radius: 16px;
+    box-shadow: 0px 10px 5px rgba(0, 0 , 0, 0.2);
+    height: 40em;
+    width: 30em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Drugie okno */
+  .resultDate {
+    font-size: 25px;
+    color: white; 
+    text-align: center;
+  }
+  
+  .resultCityH3, .mainH3 {
+    display: block;
+    font-size: 4em;
+    color: white; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .divTemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resultTempIcon {
+    background-image: url(../image/icons8-temperature-48.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .resultTempH2 {
+    color: white; 
+    font-size: 4em;
+  }
+  
+  //Pierwsze i trzecie okno
+  .resultH4 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  .cloudImg {
+    background-image: url(../image/clouds.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .windImg {
+    background-image: url(../image/wind.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .pressureImg {
+    background-image: url(../image/pressure.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .sunriseImg {
+    background-image: url(../image/sunrise.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .sunsetImg {
+    background-image: url(../image/sunset.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .visibilityImg {
+    background-image: url(../image/visibility.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .humidityImg {
+    background-image: url(../image/humidity.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .feelImg {
+    background-image: url(../image/feel.png);
+    width: 80px; 
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+  
+  .chartLine {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chartApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .sectionSecond {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .errors {
+    background: rgba(30, 67, 102, 0.5);
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    border-radius: 16px;
+    box-shadow: 0px 10px 5px rgba(0, 0 , 0, 0.2);
+    display: flex;
+    color: white;
+    height: 100px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px
+  }
+  
+  
