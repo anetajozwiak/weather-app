@@ -11,13 +11,13 @@
   /* Component Form */
   .calender {
     color: white;
-    font-size: 25px;
+    font-size: 0.8em;
     margin-top: 10px;
     text-align: center;
   }
   
   #root {
-    padding: 25px;
+    // padding: 10px;
     background-image: url(../image/cloud.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,36 +88,45 @@
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    height: 80%em;
     width: 100%;
   }
   
   .resultIcon, .resultCity, .resultIcon2 {
     background: rgba(30, 67, 102, 0.5);
-    margin: 2em;
+    margin: 0.3em;
     border-radius: 16px;
     box-shadow: 0px 10px 5px rgba(0, 0 , 0, 0.2);
-    height: 40em;
     width: 30em;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 3em;
+  }
+
+  @media (min-width: 1000px) {
+    .resultIcon, .resultCity, .resultIcon2 {
+      width: 25%;
+    }
+  }
+
+  .resultCity {
+    height: 20em;
   }
   
   /* Drugie okno */
   .resultDate {
-    font-size: 25px;
+    font-size: 0.8em;
     color: white; 
     text-align: center;
   }
   
   .resultCityH3, .mainH3 {
     display: block;
-    font-size: 4em;
+    font-size: 1.8em;
     color: white; 
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
   }
   
   .divTemp {
@@ -128,94 +137,110 @@
   
   .resultTempIcon {
     background-image: url(../image/icons8-temperature-48.png);
-    width: 100px;
-    height: 100px;
+    width: 2em;
+    height: 2em;
     background-size: cover;
     background-position: center;
   }
   
   .resultTempH2 {
     color: white; 
-    font-size: 4em;
+    font-size: 1em;
   }
   
   //Pierwsze i trzecie okno
   .resultH4 {
     color: white;
-    font-size: 1.5em;
-    margin-top: 20px;
+    font-size: 0.8em;
+    margin-top: 1em;
+    text-align: center;
+    height: 3em;
   }
   
   .cloudImg {
     background-image: url(../image/clouds.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .windImg {
     background-image: url(../image/wind.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .pressureImg {
     background-image: url(../image/pressure.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .sunriseImg {
     background-image: url(../image/sunrise.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .sunsetImg {
     background-image: url(../image/sunset.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .visibilityImg {
     background-image: url(../image/visibility.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .humidityImg {
     background-image: url(../image/humidity.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
   }
   
   .feelImg {
     background-image: url(../image/feel.png);
-    width: 80px; 
-    height: 80px;
+    width: 2em; 
+    height: 2em;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
+    margin-top: 1em;
+  }
+
+  //Druga sekcja
+
+  .sectionSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chartApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .chartLine {
@@ -224,20 +249,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2em;
+    width: 50em;
   }
   
-  .chartApp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  @media (max-width: 800px) {
+    .chartLine {
+      width: 25em;
+    }
   }
   
-  .sectionSecond {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media (max-width: 500px) {
+    .chartLine {
+      width: 20em;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .chartLine {
+      width: 15em;
+    }
   }
   
   .errors {

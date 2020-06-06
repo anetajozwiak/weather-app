@@ -66,7 +66,7 @@ class Result extends Component {
         let month = months[d.getMonth()];
         let year = d.getFullYear();
 
-        return `${month} ${year} ${date} ${day}`
+        return `${day}, ${date} ${month} ${year}  `
     }
         render() {
         const {city, sunrise, sunset, temp, pressure, wind, cloud, visibility, humidity, feel, main, err} = this.props.weather;
@@ -330,7 +330,6 @@ class ResultDay extends Component {
             content = (
                 <>
                 <div className={"chartLine"}> 
-                    <div style={{width: "1200px", height: "700px", marginTop: "30px"}}>
                         <Line data={{
                             labels: [`${day1}`, `${day2}`, `${day3}`, `${day4}`, `${day5}`],
                             datasets: [{
@@ -356,7 +355,6 @@ class ResultDay extends Component {
                             borderWidth: 2
                             }]
                         }}/>
-                    </div>
                 </div>
                 </>
             ) 
